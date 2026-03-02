@@ -37,10 +37,10 @@ public class SchoolDaoImpl implements SchoolDao {
         // YOUR CODE STARTS HERE
 
         String sql = """
-        SELECT fName, lName
-        FROM student
-        ORDER BY lName;
-        """;
+                SELECT fName, lName
+                FROM student
+                ORDER BY lName;
+                """;
 
         // YOUR CODE ENDS HERE
 
