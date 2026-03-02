@@ -88,7 +88,7 @@ public class SchoolDaoImpl implements SchoolDao {
         // YOUR CODE STARTS HERE
 
         String sql = """
-                SELECT c.courseCode, c.courseDesc, COUNT(cs.student_id) AS numStudents
+                SELECT c.courseCode, c.courseDesc, COUNT(*) AS numStudents
                 FROM course c
                 JOIN course_student cs ON c.cid = cs.course_id
                 GROUP BY c.courseCode, c.courseDesc;
